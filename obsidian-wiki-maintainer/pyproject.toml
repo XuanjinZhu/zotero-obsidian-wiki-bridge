@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "obsidian-wiki-maintainer"
+version = "1.0.0"
+description = "A schema-driven Obsidian wiki maintenance tool with search, linting, and auto-indexing capabilities."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+  { name = "XuanjinZhu" }
+]
+keywords = [
+  "obsidian",
+  "wiki",
+  "knowledge-base",
+  "maintenance",
+  "search",
+  "linting",
+  "markdown"
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Text Processing :: Markup :: Markdown",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/XuanjinZhu/zotero-obsidian-wiki-bridge"
+Repository = "https://github.com/XuanjinZhu/zotero-obsidian-wiki-bridge"
+Issues = "https://github.com/XuanjinZhu/zotero-obsidian-wiki-bridge/issues"
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.6.0",
+]
+
+[tool.setuptools]
+py-modules = []
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]

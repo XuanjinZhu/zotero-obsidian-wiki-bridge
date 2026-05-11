@@ -1,0 +1,7 @@
+interface:
+  display_name: "Obsidian Wiki Maintainer"
+  short_description: "Maintain a schema-driven Obsidian research wiki."
+  default_prompt: "Use $obsidian-wiki-maintainer to maintain a schema-driven Obsidian research wiki: refresh search indexes, answer queries from the wiki plus raw sources, lint consistency, and backfill or migrate notes into the canonical structure."
+
+policy:
+  allow_implicit_invocation: true
